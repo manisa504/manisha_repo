@@ -15,12 +15,6 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 📖 **Detailed instructions**: See [DEPLOYMENT.md](./DEPLOYMENT.md)
 
-## 🌐 Live Demo
-
-Once deployed, your portfolio will be available at:
-```
-https://[YOUR_USERNAME].github.io/[REPO_NAME]/
-```
 
 ## 🛠️ Local Development
 
