@@ -1,10 +1,19 @@
-import { Download, Mail, MapPin, Phone } from 'lucide-react';
+import { Download, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   const handleDownloadResume = () => {
-    // In a real implementation, this would download the actual resume file
-    console.log('Download resume clicked');
+    // Resume path in public folder
+    const resumePath = '/assets/documents/Manisha_Shah_Resume.pdf';
+    
+    const link = document.createElement('a');
+    link.href = resumePath;
+    link.download = 'Manisha_Shah_Resume.pdf';
+    
+    // Try to download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleContactClick = () => {
@@ -51,15 +60,6 @@ const HeroSection = () => {
                   Manisa.doc@gmail.com
                 </a>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone size={18} className="text-accent" />
-                <a 
-                  href="tel:360-989-0142" 
-                  className="hover:text-primary transition-colors"
-                >
-                  360-989-0142
-                </a>
-              </div>
             </div>
 
             {/* CTA Buttons */}
@@ -84,11 +84,16 @@ const HeroSection = () => {
           {/* Professional Image */}
           <div className="flex justify-center lg:justify-end fade-in animate" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl bg-muted/20">
                 <img 
-                  src="/lovable-uploads/8dda7f20-2879-47dd-82bf-ff8f0b91d5df.png" 
+                  src="/assets/images/profile-photo.jpg" 
                   alt="Manisha Shah - Data Scientist" 
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback to existing image if profile photo doesn't exist
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/lovable-uploads/8dda7f20-2879-47dd-82bf-ff8f0b91d5df.png";
+                  }}
                 />
               </div>
               {/* Decorative elements */}

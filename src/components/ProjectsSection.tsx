@@ -13,6 +13,7 @@ const ProjectsSection = () => {
       liveUrl: "#",
       stars: 0,
       forks: 0,
+      image: "/assets/images/aircraft-fuel-optimization.png", // Add your image here
       isPlaceholder: true
     },
     {
@@ -24,6 +25,7 @@ const ProjectsSection = () => {
       liveUrl: "#",
       stars: 0,
       forks: 0,
+      image: "/assets/images/cost-index-modeling.png", // Add your image here
       isPlaceholder: true
     },
     {
@@ -35,6 +37,7 @@ const ProjectsSection = () => {
       liveUrl: "#",
       stars: 0,
       forks: 0,
+      image: "/assets/images/market-segmentation-dashboard.png", // Add your image here
       isPlaceholder: true
     }
   ];
@@ -64,6 +67,22 @@ const ProjectsSection = () => {
               className="card-elegant group hover:scale-105 transition-all duration-300 fade-in animate"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              {/* Project Image */}
+              {project.image && (
+                <div className="mb-4 rounded-lg overflow-hidden bg-muted/20">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    onError={(e) => {
+                      // Hide image if it fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                    }}
+                  />
+                </div>
+              )}
+
               {/* Project Header */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">

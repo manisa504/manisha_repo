@@ -1,42 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Professional Portfolio Design System */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
-
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 210 22% 15%;
-    --surface: 220 14% 98%;
-    --surface-secondary: 218 17% 95%;
+    /* Dark Theme Core Colors */
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --surface: 217 32% 8%;
+    --surface-secondary: 217 32% 12%;
 
-    /* Professional Navy & Slate Palette */
-    --primary: 217 91% 24%;
-    --primary-light: 217 91% 35%;
-    --primary-foreground: 210 40% 98%;
+    /* Professional Navy & Accent Palette for Dark Theme */
+    --primary: 217 91% 60%;
+    --primary-light: 217 91% 70%;
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 215 25% 88%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary: 217 32% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
     --accent: 25 95% 64%;
     --accent-light: 25 95% 75%;
     --accent-foreground: 25 20% 15%;
 
-    /* Neutral Tones */
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
-    --subtle: 220 9% 56%;
+    /* Dark Theme Neutral Tones */
+    --muted: 217 32% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --subtle: 215 25% 75%;
 
-    /* Interactive States */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    /* Dark Theme Interactive States */
+    --border: 217 32% 17.5%;
+    --input: 217 32% 17.5%;
     --ring: 217 91% 60%;
 
-    /* Semantic Colors */
+    /* Semantic Colors (adjusted for dark theme) */
     --success: 142 76% 36%;
     --success-foreground: 355 100% 97%;
     --warning: 38 92% 50%;
@@ -44,11 +44,11 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    /* Card & Components */
-    --card: 0 0% 100%;
-    --card-foreground: 210 22% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 22% 15%;
+    /* Dark Theme Card & Components */
+    --card: 217 32% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 217 32% 8%;
+    --popover-foreground: 210 40% 98%;
 
     /* Design System Variables */
     --radius: 0.75rem;
@@ -61,77 +61,47 @@
     --shadow-lg: 0 10px 15px -3px hsl(220 43% 11% / 0.1), 0 4px 6px -2px hsl(220 43% 11% / 0.05);
     --shadow-xl: 0 20px 25px -5px hsl(220 43% 11% / 0.1), 0 10px 10px -5px hsl(220 43% 11% / 0.04);
 
-    /* Enhanced Gradients */
+    /* Dark Theme Enhanced Background Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--surface)), hsl(var(--background)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--surface-secondary)) 60%, hsl(var(--primary) / 0.15) 100%);
-    --gradient-section: linear-gradient(45deg, hsl(var(--surface) / 0.85) 0%, hsl(var(--surface-secondary) / 0.95) 50%, hsl(var(--accent) / 0.06) 100%);
-    --gradient-overlay: linear-gradient(135deg, hsl(var(--primary) / 0.04) 0%, hsl(var(--accent) / 0.04) 50%, hsl(var(--primary) / 0.02) 100%);
+    --gradient-hero: 
+      linear-gradient(135deg, 
+        hsl(var(--background)) 0%, 
+        hsl(var(--surface)) 30%,
+        hsl(var(--surface-secondary)) 60%, 
+        hsl(var(--primary) / 0.15) 85%, 
+        hsl(var(--accent) / 0.10) 100%);
+    --gradient-section: linear-gradient(45deg, hsl(var(--surface) / 0.95) 0%, hsl(var(--surface-secondary) / 0.85) 50%, hsl(var(--accent) / 0.08) 100%);
+    --gradient-overlay: 
+      linear-gradient(135deg, 
+        hsl(var(--primary) / 0.10) 0%, 
+        transparent 25%,
+        hsl(var(--accent) / 0.12) 50%, 
+        transparent 75%,
+        hsl(var(--primary-light) / 0.08) 100%);
     --gradient-mesh: 
-      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.2) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, hsl(var(--accent) / 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, hsl(var(--primary-light) / 0.12) 0%, transparent 50%);
+      radial-gradient(circle at 15% 25%, hsl(var(--primary) / 0.20) 0%, transparent 50%),
+      radial-gradient(circle at 85% 75%, hsl(var(--accent) / 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 45% 60%, hsl(var(--primary-light) / 0.12) 0%, transparent 45%),
+      radial-gradient(circle at 70% 30%, hsl(var(--accent-light) / 0.10) 0%, transparent 40%),
+      conic-gradient(from 45deg at 50% 50%, transparent, hsl(var(--primary) / 0.05), transparent, hsl(var(--accent) / 0.06), transparent);
     
-    /* Geometric Patterns */
-    --pattern-dots: radial-gradient(circle, hsl(var(--primary) / 0.2) 1px, transparent 1px);
+    /* Geometric Patterns for Dark Theme */
+    --pattern-dots: radial-gradient(circle, hsl(var(--primary) / 0.3) 1px, transparent 1px);
     --pattern-grid: 
-      linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px),
-      linear-gradient(hsl(var(--border) / 0.4) 1px, transparent 1px);
+      linear-gradient(90deg, hsl(var(--border) / 0.5) 1px, transparent 1px),
+      linear-gradient(hsl(var(--border) / 0.5) 1px, transparent 1px);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Variables for Dark Theme */
+    --sidebar-background: 217 32% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 84% 4.9%;
+    --sidebar-accent: 217 32% 12%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32% 17.5%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
@@ -145,8 +115,19 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-image: var(--gradient-overlay), var(--gradient-mesh), var(--gradient-subtle);
     background-attachment: fixed, fixed, fixed;
-    background-size: cover, cover, cover;
+    background-size: 100% 100%, 100% 100%, 100% 100%;
     background-repeat: no-repeat;
+    background-blend-mode: overlay, soft-light, normal;
+    animation: backgroundShift 30s ease-in-out infinite;
+  }
+
+  @keyframes backgroundShift {
+    0%, 100% {
+      background-position: 0% 0%, 0% 0%, 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%, -20% -20%, 50% 50%;
+    }
   }
 
   /* Typography Classes */
@@ -198,6 +179,14 @@
     @apply bg-card border border-border rounded-xl p-6;
     @apply shadow-md hover:shadow-lg transition-all duration-300;
     @apply hover:-translate-y-1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Contact card specific styling */
+  #contact .card-elegant {
+    overflow: visible;
+    contain: layout;
   }
 
   .card-minimal {
@@ -360,41 +349,47 @@
   }
 
   .orb:nth-child(1) {
-    width: 300px;
-    height: 300px;
-    background: hsl(var(--primary));
-    top: 10%;
-    left: 10%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.3), hsl(var(--primary-light) / 0.1));
+    top: -10%;
+    left: -10%;
     animation-delay: 0s;
+    filter: blur(2px);
   }
 
   .orb:nth-child(2) {
-    width: 200px;
-    height: 200px;
-    background: hsl(var(--accent));
-    top: 60%;
-    right: 10%;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, hsl(var(--accent) / 0.25), hsl(var(--accent-light) / 0.1));
+    top: 50%;
+    right: -10%;
     animation-delay: -10s;
+    filter: blur(1.5px);
   }
 
   .orb:nth-child(3) {
-    width: 150px;
-    height: 150px;
-    background: hsl(var(--primary-light));
-    bottom: 20%;
-    left: 60%;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, hsl(var(--primary-light) / 0.2), hsl(var(--accent) / 0.08));
+    bottom: -5%;
+    left: 50%;
     animation-delay: -5s;
+    filter: blur(1px);
   }
 
   @keyframes drift {
     0%, 100% {
-      transform: translate(0, 0) scale(1);
+      transform: translate(0, 0) scale(1) rotate(0deg);
     }
-    33% {
-      transform: translate(30px, -30px) scale(1.1);
+    25% {
+      transform: translate(40px, -40px) scale(1.1) rotate(5deg);
     }
-    66% {
-      transform: translate(-20px, 20px) scale(0.9);
+    50% {
+      transform: translate(-30px, 30px) scale(0.9) rotate(-3deg);
+    }
+    75% {
+      transform: translate(20px, -20px) scale(1.05) rotate(2deg);
     }
   }
 }
