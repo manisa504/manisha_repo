@@ -1,71 +1,46 @@
-# Manisha's Portfolio Website 🌟
+# 👋 Hello and Welcome — I'm Manisha Shah
 
-A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
+I'm a passionate and driven **Data Scientist** with a strong foundation in statistical analysis, machine learning, and data visualization. I created this portfolio website to introduce myself, share my journey, and highlight the projects and skills that define my work.
 
-## 🚀 Quick Start
+With a background that bridges data science, business strategy, and technical expertise, I thrive on transforming complex datasets into clear, actionable insights. Whether it’s optimizing predictive models, building interactive dashboards, or collaborating with cross-functional teams to drive data-informed decisions — I bring both analytical rigor and creative problem-solving to every project I take on.
 
-### For Manisha (or anyone forking this repo):
+---
 
-1. **Fork this repository** to your GitHub account
-2. **Enable GitHub Pages**:
-   - Go to Settings → Pages
-   - Select "GitHub Actions" as source
-3. **Customize your content** in the `src/components/` folder
-4. **Push changes** - your site will auto-deploy!
+## 🌟 What I Do
 
-📖 **Detailed instructions**: See [DEPLOYMENT.md](./DEPLOYMENT.md)
+I specialize in:
 
+- **Machine Learning & Predictive Modeling**  
+  Designing and deploying robust models to solve real-world problems across industries, with a focus on model accuracy, interpretability, and scalability.
 
-## 🛠️ Local Development
+- **Data Wrangling & Feature Engineering**  
+  Cleaning, transforming, and enriching data to extract meaningful patterns, reduce noise, and prepare it for analysis or machine learning pipelines.
 
-Follow these steps:
+- **Data Visualization & Storytelling**  
+  Creating intuitive dashboards and visual reports that not only display data but tell a compelling story — enabling better business decisions.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Cross-Functional Collaboration**  
+  Working closely with stakeholders, engineers, and subject matter experts to align data strategies with organizational goals.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🎯 My Mission
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+My goal is to use data to **solve real problems**, create impact, and **bridge the gap** between raw numbers and business value. I believe that data is more than just numbers — it's a narrative that, when understood correctly, can empower smarter strategies, faster innovation, and better outcomes.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📌 About This Portfolio
 
-**Use GitHub Codespaces**
+This website is a reflection of my professional journey, a space to showcase the projects I've worked on, and a window into how I think as a data scientist. Whether you're a recruiter, a fellow data professional, or someone simply curious about what I do — I hope you find something here that resonates.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🤝 Let's Connect
 
-This project is built with:
+If you're interested in working together, discussing data science, or simply want to say hello — feel free to reach out. I'm always open to new ideas, meaningful collaborations, and opportunities to learn and grow.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cf6989ed-ea27-4b3f-a163-c860cee03b97) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Thanks for stopping by,  
+**Manisha Shah**
