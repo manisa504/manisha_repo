@@ -81,19 +81,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Professional Image */}
+          {/* Professional Image Placeholder */}
           <div className="flex justify-center lg:justify-end fade-in animate" style={{ animationDelay: '0.3s' }}>
-            <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl">
-                <img 
-                  src="/lovable-uploads/8dda7f20-2879-47dd-82bf-ff8f0b91d5df.png" 
-                  alt="Manisha Shah - Data Scientist" 
-                  className="w-full h-full object-cover"
-                />
+            <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center border-4 border-primary/10">
+              <div className="w-72 h-72 lg:w-88 lg:h-88 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+                <div className="text-center space-y-2">
+                  <div className="w-24 h-24 rounded-full bg-primary/20 mx-auto mb-4"></div>
+                  <p className="text-subtle text-sm">Professional Photo</p>
+                </div>
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full blur-lg"></div>
             </div>
           </div>
         </div>
