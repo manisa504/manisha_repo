@@ -1,24 +1,28 @@
-# Welcome to your Lovable project
+# Manisha's Portfolio Website 🌟
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/cf6989ed-ea27-4b3f-a163-c860cee03b97
+## 🚀 Quick Start
 
-## How can I edit this code?
+### For Manisha (or anyone forking this repo):
 
-There are several ways of editing your application.
+1. **Fork this repository** to your GitHub account
+2. **Enable GitHub Pages**:
+   - Go to Settings → Pages
+   - Select "GitHub Actions" as source
+3. **Customize your content** in the `src/components/` folder
+4. **Push changes** - your site will auto-deploy!
 
-**Use Lovable**
+📖 **Detailed instructions**: See [DEPLOYMENT.md](./DEPLOYMENT.md)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cf6989ed-ea27-4b3f-a163-c860cee03b97) and start prompting.
+## 🌐 Live Demo
 
-Changes made via Lovable will be committed automatically to this repo.
+Once deployed, your portfolio will be available at:
+```
+https://[YOUR_USERNAME].github.io/[REPO_NAME]/
+```
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Local Development
 
 Follow these steps:
 
