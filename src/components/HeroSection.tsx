@@ -15,7 +15,12 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center section-padding bg-gradient-to-br from-surface via-background to-surface-secondary">
+    <section id="home" className="min-h-screen flex items-center section-padding bg-hero">
+      <div className="bg-orbs">
+        <div className="orb"></div>
+        <div className="orb"></div>
+        <div className="orb"></div>
+      </div>
       <div className="container-max">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}

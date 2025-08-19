@@ -31,7 +31,11 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-background">
+    <section id="skills" className="section-padding bg-background relative overflow-hidden">
+      {/* Floating geometric elements */}
+      <div className="floating-element w-20 h-20 border-2 border-primary/20 rounded-lg" style={{ top: '10%', right: '10%' }}></div>
+      <div className="floating-element w-16 h-16 bg-accent/5 rounded-full" style={{ top: '70%', left: '5%' }}></div>
+      <div className="floating-element w-12 h-12 border border-accent/30 rotate-45" style={{ top: '30%', left: '80%' }}></div>
       <div className="container-max">
         <div className="text-center mb-16 fade-in animate">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">

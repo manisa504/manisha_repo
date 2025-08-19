@@ -39,7 +39,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-surface">
+    <section id="contact" className="section-padding bg-contact">
       <div className="container-max">
         <div className="text-center mb-16 fade-in animate">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
