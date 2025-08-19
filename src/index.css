@@ -65,19 +65,19 @@
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--surface)), hsl(var(--background)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--surface)) 50%, hsl(var(--primary) / 0.05) 100%);
-    --gradient-section: linear-gradient(45deg, hsl(var(--surface) / 0.8) 0%, hsl(var(--surface-secondary) / 0.9) 50%, hsl(var(--accent) / 0.03) 100%);
-    --gradient-overlay: linear-gradient(135deg, hsl(var(--primary) / 0.02) 0%, hsl(var(--accent) / 0.02) 50%, hsl(var(--primary) / 0.01) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--surface-secondary)) 60%, hsl(var(--primary) / 0.15) 100%);
+    --gradient-section: linear-gradient(45deg, hsl(var(--surface) / 0.85) 0%, hsl(var(--surface-secondary) / 0.95) 50%, hsl(var(--accent) / 0.06) 100%);
+    --gradient-overlay: linear-gradient(135deg, hsl(var(--primary) / 0.04) 0%, hsl(var(--accent) / 0.04) 50%, hsl(var(--primary) / 0.02) 100%);
     --gradient-mesh: 
-      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 80%, hsl(var(--accent) / 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, hsl(var(--primary-light) / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 20% 20%, hsl(var(--primary) / 0.2) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, hsl(var(--accent) / 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(var(--primary-light) / 0.12) 0%, transparent 50%);
     
     /* Geometric Patterns */
-    --pattern-dots: radial-gradient(circle, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    --pattern-dots: radial-gradient(circle, hsl(var(--primary) / 0.2) 1px, transparent 1px);
     --pattern-grid: 
-      linear-gradient(90deg, hsl(var(--border) / 0.3) 1px, transparent 1px),
-      linear-gradient(hsl(var(--border) / 0.3) 1px, transparent 1px);
+      linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px),
+      linear-gradient(hsl(var(--border) / 0.4) 1px, transparent 1px);
 
     --sidebar-background: 0 0% 98%;
 
@@ -143,6 +143,10 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-image: var(--gradient-overlay), var(--gradient-mesh), var(--gradient-subtle);
+    background-attachment: fixed, fixed, fixed;
+    background-size: cover, cover, cover;
+    background-repeat: no-repeat;
   }
 
   /* Typography Classes */
@@ -242,7 +246,7 @@
     right: 0;
     bottom: 0;
     background: var(--gradient-mesh);
-    opacity: 0.6;
+    opacity: 0.8;
     z-index: 1;
   }
 
@@ -255,7 +259,7 @@
     bottom: 0;
     background: var(--pattern-dots);
     background-size: 30px 30px;
-    opacity: 0.3;
+    opacity: 0.4;
     z-index: 2;
   }
 
@@ -351,7 +355,7 @@
   .orb {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.03;
+    opacity: 0.08;
     animation: drift 20s ease-in-out infinite;
   }
 
