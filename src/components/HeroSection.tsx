@@ -4,11 +4,11 @@ import { Button } from '@/components/ui/button';
 const HeroSection = () => {
   const handleDownloadResume = () => {
     // Resume path in public folder
-    const resumePath = '/assets/documents/Manisha_Shah_Resume.pdf';
+    const resumePath = '/manisha_repo/assets/documents/Resume_Manisha Shah_DataScientist.pdf';
     
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'Manisha_Shah_Resume.pdf';
+    link.download = 'Resume_Manisha Shah_DataScientist.pdf';
     
     // Try to download
     document.body.appendChild(link);
@@ -86,13 +86,13 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl bg-muted/20">
                 <img 
-                  src="/assets/images/profile-photo.jpg" 
+                  src="/manisha_repo/assets/images/manisha_profile_pic.png" 
                   alt="Manisha Shah - Data Scientist" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     // Fallback to existing image if profile photo doesn't exist
                     const target = e.target as HTMLImageElement;
-                    target.src = "/lovable-uploads/8dda7f20-2879-47dd-82bf-ff8f0b91d5df.png";
+                    target.src = "/manisha_repo/lovable-uploads/8dda7f20-2879-47dd-82bf-ff8f0b91d5df.png";
                   }}
                 />
               </div>
